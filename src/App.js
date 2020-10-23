@@ -19,7 +19,7 @@ function App() {
           Learn React
         </a>
         <h2>
-          THis is my second heading and this is for testing purpose.
+          THis is my second heading for testing purpose.
         </h2>
         <p>
           My First React app Code
