@@ -32,4 +32,4 @@ jobs:
       - name: Installing Surge
         run: npm install --g surge
       - name: deploying website on surge
-        run: surge ./build reacttest2.surge.sh --token ${{ secrets.SECRET_REACT_TOKEN1 }}
+        run: surge ./ reacttest2.surge.sh --token ${{ secrets.SECRET_REACT_TOKEN1 }}
