@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: First react app test 1
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -39,4 +39,4 @@ jobs:
      run: yarn install --g surge
      
      -name: deploying surge
-      run: surge ./build http://reacttest2.surge.sh --token ${{secrets.SECRET_REACT_TOKEN1}}
+      run: surge ./build reacttest2.surge.sh --token ${{secrets.SECRET_REACT_TOKEN1}}
