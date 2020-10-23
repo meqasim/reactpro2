@@ -20,13 +20,13 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-    - name: Setup Nodejs environment
+  -name: Setup Nodejs environment
     uses: actions/setup-node@v2-beta
     with:
       version: 12
       
       
-    - name: Yarn CLI
+  -name: Yarn CLI
   # You may pin to the exact commit or the version.
   # uses: CultureHQ/actions-yarn@661c6f3a66041c2432bcfb78096b9207304614c8
   uses: CultureHQ/actions-yarn@v1.0.1
@@ -34,11 +34,11 @@ jobs:
      #yarn command
      cmd: install
      
-     -name: creating build
+  -name: creating build
       run: yarn build
       
-    -name: installing Surge
+  -name: installing Surge
      run: yarn install --g surge
      
-     -name: deploying surge
+  -name: deploying surge
       run: surge ./build reacttest2.surge.sh --token ${{secrets.SECRET_REACT_TOKEN1}}
